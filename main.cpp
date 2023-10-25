@@ -70,7 +70,7 @@ void* read_file(void *file_path_ptr) {
 	std::ifstream infile(inputFilePath);
 	if (infile.is_open()) {
 		while (infile >> a >> b)
-		{
+		{ 
 			Task task = { a, b };
 #ifdef DEBUG_MODE
 			printf("reading: %d, %d\n", task.a, task.b);
